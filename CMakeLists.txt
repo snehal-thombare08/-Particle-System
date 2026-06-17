@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.16)
+project(ParticleSystem)
+set(CMAKE_CXX_STANDARD 17)
+find_package(SFML 3 COMPONENTS Graphics Window System REQUIRED)
+add_executable(ParticleSystem src/main.cpp)
+target_link_libraries(ParticleSystem PRIVATE SFML::Graphics SFML::Window SFML::System)
